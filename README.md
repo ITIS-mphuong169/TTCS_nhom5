@@ -1,33 +1,3 @@
 # TTCS_nhom5
-
-Ứng dụng Bert4Rec trong dự đoán bài tập trên CodePTIT và so sánh với SASRec.
-BERT4Rec (Bidirectional Transformer for Sequential Recommendation)
-Công nghệ chính: Sử dụng Transformer bidirectional giống BERT để mô hình hóa trình tự bài tập đã làm của người dùng.
-Ưu điểm: Học ngữ cảnh hai chiều, hiểu rõ hơn về thứ tự bài tập, cải thiện dự đoán bài tập tiếp theo.
-Thư viện: RecBole hỗ trợ huấn luyện và đánh giá BERT4Rec dễ dàng.
-
-SASRec (Self-Attention Sequential Recommendation)
-Công nghệ chính: Transformer self-attention (một chiều) để học thứ tự bài tập theo thời gian.
-Ưu điểm: Đơn giản hơn BERT4Rec, nhưng chỉ học theo hướng từ quá khứ → tương lai.
-
-*So sánh BERT4Rec vs SASRec
-
-Tiêu chí
-BERT4Rec
-SASRec
-Mô hình hóa trình tự
-Hai chiều (bidirectional)
-Một chiều (unidirectional)
-Hiệu suất dự đoán
-Tốt hơn trên tập dữ liệu lớn	
-Tốt trên dữ liệu tuần tự ngắn
-Độ phức tạp tính toán
-Cao hơn (O(n²))	
-Thấp hơn
-Ứng dụng
-Dự đoán chính xác hơn, phù hợp với hệ thống lớn
-Đơn giản, nhanh hơn, phù hợp với dataset nhỏ
-Kết luận: 
-BERT4Rec phù hợp hơn nếu có dữ liệu bài tập lớn và cần mô hình mạnh.
-SASRec đơn giản hơn, phù hợp nếu chỉ cần gợi ý nhanh mà không cần mô hình hóa sâu.
-
+Trong bối cảnh thương mại điện tử phát triển mạnh mẽ, các website bán quần áo ngày càng trở thành công cụ quan trọng giúp người tiêu dùng tiếp cận  nhanh chóng và tiện lợi. Tuy nhiên, với số lượng lớn sản phẩm và sự đa dạng trong nhu cầu khách hàng, việc tìm kiếm trang phục phù hợp có thể gặp nhiều thách thức. Do đó, hệ khuyến nghị đóng vai trò quan trọng trong việc cá nhân hóa trải nghiệm người dùng, cung cấp gợi ý dựa trên sở thích, hành vi và thói quen mua sắm. 
+Hệ thống được xây dựng bao gồm các chức năng chính như đề xuất trang phục theo sở thích cá nhân, gợi ý dựa trên xu hướng chung,. Để chứng minh tính ứng dụng thực tế, nghiên cứu này không chỉ tập trung phát triển website và ứng dụng di động (Android, iOS) mà còn ứng dụng các framework hiện đại, đảm bảo giao diện người dùng thích ứng và hiển thị đề xuất theo thời gian thực . Cách tiếp cận toàn diện này không chỉ nâng cao hiệu suất thuật toán, mà còn xây dựng một mô hình linh hoạt, có khả năng mở rộng cho các nền tảng bán hàng trực tuyến, giúp cân bằng giữa hiệu quả tính toán và trải nghiệm người dùng cá nhân hóa sâu sắc.
